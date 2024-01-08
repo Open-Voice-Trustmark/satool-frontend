@@ -1,22 +1,21 @@
-import { H1, H2, H4 } from 'components/Text'
-import QuestionLayout from './QuestionLayout'
-import { Trans, useTranslation } from 'react-i18next'
-import { section } from './urls'
-import useQuestionnaire from './useQuestionnaire'
-import useSections from './useSections'
-import s from './Intro.module.scss'
-import Loading from 'components/Loading'
-import { useNavigate } from 'react-router-dom'
-import { useAuthOnly } from '@spartanbits/react-auth'
+import { H1, H2 } from "components/Text";
+import QuestionLayout from "./QuestionLayout";
+import { Trans } from "react-i18next";
+import { section } from "./urls";
+import useQuestionnaire from "./useQuestionnaire";
+import useSections from "./useSections";
+import s from "./Intro.module.scss";
+import Loading from "components/Loading";
+import { useNavigate } from "react-router-dom";
+import { useAuthOnly } from "@spartanbits/react-auth";
 
 const Intro = () => {
-  const { t } = useTranslation()
-  const sections = useSections({})
-  const questionnaire = useQuestionnaire()
+  const sections = useSections({});
+  const questionnaire = useQuestionnaire();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  useAuthOnly(() => navigate('/login'))
+  useAuthOnly(() => navigate("/login"));
 
   return (
     <QuestionLayout
@@ -47,7 +46,7 @@ const Intro = () => {
         {!questionnaire && <Loading />}
       </div>
     </QuestionLayout>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
