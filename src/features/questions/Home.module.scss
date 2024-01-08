@@ -1,17 +1,13 @@
-.info {
+.content {
   padding-top: 300px;
-  max-width: 1024px;
-
-  .content {
-    max-width: 800px;
-    h1 {
-      margin-bottom: var(--sp-3);
-    }
-    h2 {
-      margin-top: var(--sp-4);
-    }
-    p {
-      max-width: 700px;
-    }
+  max-width: 800px;
+  h1 {
+    margin-bottom: var(--sp-3);
+  }
+  h2 {
+    margin-top: var(--sp-4);
+  }
+  p {
+    max-width: 700px;
   }
 }
