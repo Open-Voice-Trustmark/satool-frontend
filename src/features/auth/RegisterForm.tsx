@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { Link } from 'react-router-dom'
 import AuthFooter from './AuthFooter'
 import { RegisterForm as RegisterFormAuth } from '@spartanbits/react-auth'

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 .modal {
   position: fixed;
   background-color: var(--background-overlay) !important;
@@ -39,7 +41,7 @@
       padding-right: var(--sp-4);
       width: var(--sp-3);
       height: var(--sp-3);
-      background: url('../assets/img/close.svg');
+      background: url("../assets/img/close.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 30px 30px;

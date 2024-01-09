@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { useAuth } from '@spartanbits/react-auth'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'

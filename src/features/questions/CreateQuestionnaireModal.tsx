@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import Modal from 'components/Modal'
 import { P } from 'components/Text'
 import { FC, useState } from 'react'

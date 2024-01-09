@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, useEffect } from 'react'
 import QuestionLayout from './QuestionLayout'
 import s from './SectionHeading.module.scss'

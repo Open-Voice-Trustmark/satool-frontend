@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC } from 'react'
 import { Questionnaire, Section } from './questions'
 import useSections from './useSections'

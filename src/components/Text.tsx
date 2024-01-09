@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC } from 'react'
 import { clsx as cn } from 'clsx'
 import s from './Text.module.scss'

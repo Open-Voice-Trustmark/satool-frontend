@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, useState } from 'react'
 import QuestionLayout from './QuestionLayout'
 import { H4, P } from 'components/Text'

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, ReactNode, useCallback, useEffect, useState } from 'react'
 import Loading from './Loading'
 import { useTranslation } from 'react-i18next'

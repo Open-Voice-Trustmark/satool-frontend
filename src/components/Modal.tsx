@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, ReactNode, useEffect, useState } from 'react'
 import s from './Modal.module.scss'
 import { clsx as cn } from 'clsx'

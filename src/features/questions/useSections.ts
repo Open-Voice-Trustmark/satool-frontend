@@ -1,22 +1,24 @@
-import { useAuth } from "@spartanbits/react-auth";
-import { useEffect } from "react";
-import { useQuestionnaireStore } from "store/store";
+/* SPDX-License-Identifier: Apache-2.0 */
+
+import { useAuth } from '@spartanbits/react-auth'
+import { useEffect } from 'react'
+import { useQuestionnaireStore } from 'store/store'
 
 type Props = {
-  fetch?: boolean;
-};
+  fetch?: boolean
+}
 
 const useSections = ({ fetch = true }: Props) => {
-  const { sections, fetchSections } = useQuestionnaireStore();
-  const { get } = useAuth();
+  const { sections, fetchSections } = useQuestionnaireStore()
+  const { get } = useAuth()
 
   useEffect(() => {
     if (sections.length === 0) {
-      fetch && fetchSections(get);
+      fetch && fetchSections(get)
     }
-  }, [fetchSections, sections]);
+  }, [fetchSections, sections])
 
-  return sections;
-};
+  return sections
+}
 
-export default useSections;
+export default useSections

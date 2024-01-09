@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 const question = (qId: number, id: number) =>
   `/questionnaire/${qId}/question/${id}`
 

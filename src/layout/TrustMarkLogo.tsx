@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import s from './Logo.module.scss'
 import { clsx as cn } from 'clsx'
 

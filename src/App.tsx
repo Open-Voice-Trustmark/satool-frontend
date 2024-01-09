@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { Route, Routes } from 'react-router-dom'
 import s from './App.module.scss'
 import Intro from 'features/questions/Intro'

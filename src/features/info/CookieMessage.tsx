@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import s from './CookieMessage.module.scss'
 import { useEffect, useState } from 'react'
 import { useCookie } from 'react-use'

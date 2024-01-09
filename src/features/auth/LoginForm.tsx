@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { useNavigate } from 'react-router-dom'
 import AuthFooter from './AuthFooter'
 import { LoginForm as LoginFormAuth } from '@spartanbits/react-auth'

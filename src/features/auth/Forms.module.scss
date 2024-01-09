@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 .form {
   margin: var(--sp-4) 0;
 }
@@ -33,7 +35,7 @@
     position: relative;
   }
   input:checked:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     background-color: var(--accent);

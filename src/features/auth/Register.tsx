@@ -1,4 +1,5 @@
-import Layout from 'layout/Layout'
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import RegisterForm from './RegisterForm'
 import AuthLayout from './AuthLayout'
 

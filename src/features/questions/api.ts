@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { get, getLangConfig } from 'api/http-common'
 import { Answer } from './questions'
 

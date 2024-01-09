@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { clsx as cn } from 'clsx'

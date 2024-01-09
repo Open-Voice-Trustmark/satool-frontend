@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { Container } from 'react-bootstrap'
 import Logo from './Logo'
 import Navbar from './Navbar'

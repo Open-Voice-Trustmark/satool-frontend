@@ -1,5 +1,7 @@
-@use 'sass:map';
-@import '_functions';
+/* SPDX-License-Identifier: Apache-2.0 */
+
+@use "sass:map";
+@import "_functions";
 
 // css custom properties exposed globally:
 // --spacer-{name}: creates spacer variables based on the grid and multipiers

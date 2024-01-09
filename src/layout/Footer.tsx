@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { P } from 'components/Text'
 import s from './Footer.module.scss'
 import { useTranslation } from 'react-i18next'

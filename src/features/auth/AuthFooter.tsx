@@ -1,4 +1,5 @@
-import React from 'react'
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { Link } from 'react-router-dom'
 import sButton from '../../components/Button.module.scss'
 import { useTranslation } from 'react-i18next'

@@ -1,0 +1,10 @@
+{
+  "fileHeaderComment.parameter": {
+    "*": {
+      "license": "Apache-2.0"
+    }
+  },
+  "fileHeaderComment.template": {
+    "*": ["${commentbegin} SPDX-License-Identifier: ${license}${commentend}"]
+  }
+}

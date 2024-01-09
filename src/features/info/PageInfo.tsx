@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import Loader from 'components/Loader'
 import { fetchSiteInfo } from 'features/questions/api'
 import Layout from 'layout/Layout'

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FormEvent, useEffect, useState } from 'react'
 import { useAuth } from '@spartanbits/react-auth'
 import { useNavigate } from 'react-router-dom'

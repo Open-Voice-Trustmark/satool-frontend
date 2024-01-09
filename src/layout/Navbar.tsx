@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import Button from 'components/Button'
 import { useTranslation } from 'react-i18next'
 import { useLocation, useParams } from 'react-router-dom'

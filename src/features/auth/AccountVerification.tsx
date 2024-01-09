@@ -1,10 +1,11 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { post } from 'api/http-common'
-import Layout from 'layout/Layout'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import LoginForm from './LoginForm'
 import Loading from 'components/Loading'
-import { Trans, Translation, useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import AuthLayout from './AuthLayout'
 import { H2 } from 'components/Text'
 

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import Layout from 'layout/Layout'
 import s from './AuthLayout.module.scss'
 import { FC, ReactNode } from 'react'

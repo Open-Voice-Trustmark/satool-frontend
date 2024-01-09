@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
 import { FC, ReactNode } from 'react'
 import Navbar from './Navbar'
 import s from './QuestionLayout.module.scss'
