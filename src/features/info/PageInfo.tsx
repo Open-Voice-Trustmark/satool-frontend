@@ -5,6 +5,7 @@ import { fetchSiteInfo } from 'features/questions/api'
 import Layout from 'layout/Layout'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import s from './PageInfo.module.scss'
 
 const PageInfo = () => {
   const { infoSlug } = useParams()
@@ -22,7 +23,12 @@ const PageInfo = () => {
           setContent(r.result)
           setHasChanges(false)
         }}
-        render={() => <div dangerouslySetInnerHTML={{ __html: content }}></div>}
+        render={() => (
+          <div
+            className={s.content}
+            dangerouslySetInnerHTML={{ __html: content }}
+          ></div>
+        )}
       />
     </Layout>
   )
