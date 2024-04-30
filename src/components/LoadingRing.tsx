@@ -5,12 +5,12 @@ import s from './LoadingRing.module.scss'
 import { clsx as cn } from 'clsx'
 
 type LoadingRingProps = {
-  style?: 'primary' | 'secondary'
+  styleType?: 'primary' | 'secondary'
 }
 
-const LoadingRing: FC<LoadingRingProps> = ({ style = 'primary' }) => {
+const LoadingRing: FC<LoadingRingProps> = ({ styleType = 'primary' }) => {
   return (
-    <div className={cn(s.ring, style === 'secondary' && s.secondary)}></div>
+    <div className={cn(s.ring, styleType === 'secondary' && s.secondary)}></div>
   )
 }
 

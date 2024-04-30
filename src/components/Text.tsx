@@ -15,7 +15,7 @@ type PProps = {
   className?: string
   inverted?: boolean
   size?: 'small' | 'regular'
-  style?: 'bold' | 'regular'
+  styleType?: 'bold' | 'regular'
 }
 
 const H1: FC<HProps> = ({ inverted, ...props }) => {
@@ -44,7 +44,7 @@ const H4: FC<HProps> = ({ inverted, ...props }) => {
 
 const P: FC<PProps> = ({
   size = 'regular',
-  style = 'regular',
+  styleType = 'regular',
   inverted,
   ...props
 }) => {
@@ -53,7 +53,7 @@ const P: FC<PProps> = ({
       className={cn(
         s.p,
         size === 'small' && s.small,
-        style === 'bold' && s.bold,
+        styleType === 'bold' && s.bold,
         inverted && s.inverted,
         props.className
       )}

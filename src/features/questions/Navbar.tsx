@@ -72,7 +72,7 @@ const Navbar: FC<NavbarProps> = ({
         <Container className={s.contentWrapper}>
           {backTo && !logo && (
             <Button
-              style="secondary"
+              styleType="secondary"
               variant={style === 'secondary' ? 'inverted' : 'regular'}
               to={backTo}
             >
@@ -99,7 +99,7 @@ const Navbar: FC<NavbarProps> = ({
           ) : (
             loadingNext && (
               <LoadingRing
-                style={style === 'secondary' ? 'secondary' : 'primary'}
+                styleType={style === 'secondary' ? 'secondary' : 'primary'}
               />
             )
           )}

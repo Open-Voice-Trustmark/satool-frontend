@@ -15,31 +15,31 @@ const Navbar = () => {
   let content
   if (pathname === '/' && isAuthenticated) {
     content = (
-      <Button to="/my-questionnaires" style="primary">
+      <Button to="/my-questionnaires" styleType="primary">
         {t('button_my_questionnaires')}
       </Button>
     )
   } else if (pathname === '/login' && !isAuthenticated) {
     content = (
-      <Button to="/register" style="secondary">
+      <Button to="/register" styleType="secondary">
         {t('button_register')}
       </Button>
     )
   } else if (pathname === '/register' && !isAuthenticated) {
     content = (
-      <Button to="/login" style="secondary">
+      <Button to="/login" styleType="secondary">
         {t('button_log_in')}
       </Button>
     )
   } else if (questionId !== undefined || slug) {
     content = (
-      <Button to="/my-questionnaires" style="secondary">
+      <Button to="/my-questionnaires" styleType="secondary">
         {t('button_continue_later')}
       </Button>
     )
   } else {
     content = isAuthenticated ? (
-      <Button className={s.navButton} to="/logout" style="secondary">
+      <Button className={s.navButton} to="/logout" styleType="secondary">
         {t('button_logout')}
       </Button>
     ) : (

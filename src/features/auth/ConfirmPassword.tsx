@@ -54,7 +54,7 @@ function PasswordResetConfirm() {
 
   return (
     <AuthLayout>
-      {success == undefined || success === false ? (
+      {success === undefined || success === false ? (
         <>
           <H2>{t('title_confirm_password_reset')}</H2>
           <p className="pb-4 mb-0">{t('text_confirm_password_reset')}</p>

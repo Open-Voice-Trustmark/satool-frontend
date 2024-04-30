@@ -23,7 +23,7 @@ const Results = () => {
 
   return (
     <QuestionLayout
-      style="regular"
+      styleType="regular"
       nextTo="/my-questionnaires"
       backText={t('button_edit_answers')}
       backTo={
@@ -83,7 +83,7 @@ const Results = () => {
                         className={s.sectionSuggestion}
                         key={`section-suggestions-${section.name}`}
                       >
-                        <P style="bold" className={s.name}>
+                        <P styleType="bold" className={s.name}>
                           {section.name}
                         </P>
                         {section.suggestions.map((sug, i) => (

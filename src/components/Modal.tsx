@@ -77,7 +77,11 @@ const Modal: FC<ModalProps> = ({
         {body}
       </div>
       <div className={s.actions}>
-        <Button className={s.accept} style={actionStyle} onClick={handleAction}>
+        <Button
+          className={s.accept}
+          styleType={actionStyle}
+          onClick={handleAction}
+        >
           {action}
         </Button>
       </div>

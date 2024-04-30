@@ -21,7 +21,7 @@ const Intro = () => {
 
   return (
     <QuestionLayout
-      style="regular"
+      styleType="regular"
       nextTo={
         questionnaire && sections.length > 0
           ? section(questionnaire.id, sections[0].slug)

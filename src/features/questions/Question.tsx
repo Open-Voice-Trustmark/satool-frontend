@@ -41,7 +41,7 @@ const Question: FC<QuestionProps> = ({}) => {
 
   return (
     <QuestionLayout
-      style="regular"
+      styleType="regular"
       nextTo={answered ? nextUrl : undefined}
       backTo={prevUrl}
     >
@@ -52,7 +52,7 @@ const Question: FC<QuestionProps> = ({}) => {
           <div className={s.helpWrapper}>
             <P className={s.maxAnswers}>{getMaxAnswersText()}</P>
             {question.helpText && question.helpText.length > 0 ? (
-              <Button style="secondary" onClick={() => setShowHelp(true)}>
+              <Button styleType="secondary" onClick={() => setShowHelp(true)}>
                 {t('button_help')}
               </Button>
             ) : null}

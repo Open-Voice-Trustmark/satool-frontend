@@ -5,11 +5,11 @@ import s from './Logo.module.scss'
 import { clsx as cn } from 'clsx'
 
 type LogoProps = {
-  style?: 'regular' | 'white'
+  styleType?: 'regular' | 'white'
 }
 
-const Logo: FC<LogoProps> = ({ style }) => {
-  return <div className={cn(s.logo, style === 'white' && s.white)}></div>
+const Logo: FC<LogoProps> = ({ styleType }) => {
+  return <div className={cn(s.logo, styleType === 'white' && s.white)}></div>
 }
 
 export default Logo

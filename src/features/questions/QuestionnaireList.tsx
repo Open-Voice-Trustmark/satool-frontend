@@ -31,7 +31,7 @@ const QuestionnaireList = () => {
 
   return (
     <div>
-      <TopBar style="regular" fullNav />
+      <TopBar styleType="regular" fullNav />
       <Container className={s.list}>
         <div className={s.titleWrapper}>
           <H2 className={s.title}>{t('title_questionnaire_list')}</H2>
@@ -55,7 +55,7 @@ const QuestionnaireList = () => {
                 <div className={s.placeholder}>
                   <P>{t('questionnaire_list_empty')}</P>
                   <Button
-                    style="secondary"
+                    styleType="secondary"
                     className={s.startNewPlaceholder}
                     onClick={() => setShowCreateQuestionnaireModal(true)}
                   >
@@ -82,7 +82,7 @@ const QuestionnaireList = () => {
                       />
                       <div className={s.controls}>
                         <Button
-                          style="red"
+                          styleType="red"
                           className={s.delete}
                           onClick={() => setDeleteId(q.id)}
                         >
@@ -90,7 +90,9 @@ const QuestionnaireList = () => {
                         </Button>
                         <Button
                           className={s.continue}
-                          style={q.progress === 100 ? 'primary' : 'secondary'}
+                          styleType={
+                            q.progress === 100 ? 'primary' : 'secondary'
+                          }
                           to={
                             q.progress === 100
                               ? results(q.id)

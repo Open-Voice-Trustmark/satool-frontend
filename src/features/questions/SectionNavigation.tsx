@@ -30,7 +30,7 @@ const SectionNavigation: FC<SectionNavigationProps> = ({
           to={sectionUrl(questionnaire.id, sect.slug)}
         >
           {section.id === sect.id ? (
-            <P style="bold" className={cn(s.text, section.slug)}>
+            <P styleType="bold" className={cn(s.text, section.slug)}>
               {i + 1}.{section.name}
             </P>
           ) : i < index ? (

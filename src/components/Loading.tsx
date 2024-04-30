@@ -8,20 +8,20 @@ import s from './Loading.module.scss'
 import LoadingRing from './LoadingRing'
 
 type LoadingProps = {
-  style?: 'primary' | 'secondary'
+  styleType?: 'primary' | 'secondary'
 }
 
-const Loading: FC<LoadingProps> = ({ style = 'primary' }) => {
+const Loading: FC<LoadingProps> = ({ styleType = 'primary' }) => {
   const { t } = useTranslation()
 
   return (
     <div className={s.loading}>
       <div className={s.wrapper}>
-        <LoadingRing style={style} />
+        <LoadingRing styleType={styleType} />
         <P
           className={cn(
-            style === 'primary' && s.primary,
-            style === 'secondary' && s.secondary
+            styleType === 'primary' && s.primary,
+            styleType === 'secondary' && s.secondary
           )}
         >
           {t('loading')}

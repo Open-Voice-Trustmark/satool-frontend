@@ -38,7 +38,7 @@ const CookiesMessage = () => {
           <div className={s.padding}></div>
           <div className={s.options}>
             <Button
-              style="secondary"
+              styleType="secondary"
               className={s.accept}
               onClick={handleAccept}
             >

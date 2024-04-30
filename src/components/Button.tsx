@@ -11,7 +11,7 @@ type ButtonProps = {
   onClick?: () => void
   className?: string
   children: ReactNode
-  style?: 'primary' | 'secondary' | 'red'
+  styleType?: 'primary' | 'secondary' | 'red'
   variant?: 'regular' | 'inverted'
 }
 
@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({
   to,
   back = false,
   onClick,
-  style = 'primary',
+  styleType = 'primary',
   variant = 'regular',
   className,
   ...props
@@ -28,9 +28,9 @@ const Button: FC<ButtonProps> = ({
     className,
     s.button,
     to && s.link,
-    style === 'secondary' && s.secondary,
+    styleType === 'secondary' && s.secondary,
     variant === 'inverted' && s.inverted,
-    style === 'red' && s.red
+    styleType === 'red' && s.red
   )
   if (to) {
     return (

@@ -9,17 +9,20 @@ import { clsx as cn } from 'clsx'
 import { Link, useParams } from 'react-router-dom'
 
 type TopBarProps = {
-  style?: 'regular' | 'secondary'
+  styleType?: 'regular' | 'secondary'
   fullNav?: boolean
 }
 
-const TopBar: FC<TopBarProps> = ({ style = 'regular', fullNav = false }) => {
+const TopBar: FC<TopBarProps> = ({
+  styleType = 'regular',
+  fullNav = false,
+}) => {
   const { slug } = useParams()
   return (
     <div className={cn(s.topbar, slug)}>
       <Container className={s.wrapper}>
         <Link className={s.logo} to="/">
-          <Logo style={style === 'regular' ? 'regular' : 'white'} />
+          <Logo styleType={styleType === 'regular' ? 'regular' : 'white'} />
         </Link>
         <div className={s.navbar}>
           <Navbar />

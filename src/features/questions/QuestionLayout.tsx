@@ -9,7 +9,7 @@ import TopBar from 'layout/TopBar'
 
 type QuestionLayoutProps = {
   children: ReactNode
-  style?: 'regular' | 'secondary'
+  styleType?: 'regular' | 'secondary'
   nextTo?: string
   loadingNext?: boolean
   backTo?: string
@@ -21,7 +21,7 @@ type QuestionLayoutProps = {
 
 const QuestionLayout: FC<QuestionLayoutProps> = ({
   children,
-  style,
+  styleType,
   nextTo,
   loadingNext,
   backTo,
@@ -32,11 +32,11 @@ const QuestionLayout: FC<QuestionLayoutProps> = ({
 }) => {
   return (
     <div className={cn(s.questionLayout)}>
-      <TopBar style={style} />
+      <TopBar styleType={styleType} />
       <Container className={s.content}>{children}</Container>
       <div className={s.navbar}>
         <Navbar
-          style={style}
+          style={styleType}
           nextTo={nextTo}
           loadingNext={loadingNext}
           backText={backText}

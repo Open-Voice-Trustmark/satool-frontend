@@ -32,7 +32,7 @@ const SectionHeading: FC<SectionHeadingProps> = () => {
 
   return (
     <QuestionLayout
-      style="secondary"
+      styleType="secondary"
       nextTo={
         questionnaire &&
         nextQuestion &&
@@ -52,7 +52,7 @@ const SectionHeading: FC<SectionHeadingProps> = () => {
         </div>
       ) : (
         <div className={s.loadingWrapper}>
-          <Loading style="secondary" />
+          <Loading styleType="secondary" />
         </div>
       )}
     </QuestionLayout>
