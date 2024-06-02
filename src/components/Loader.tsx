@@ -22,11 +22,11 @@ const Loader: FC<LoaderProps> = ({ f, r, render, changes = true }) => {
   const load = useCallback(() => {
     setLoading(true)
     f()
-      .then((res) => {
+      .then((res: any) => {
         r(res)
         setLoading(false)
       })
-      .catch((e) => {
+      .catch((_e: any) => {
         setError(true)
         setLoading(false)
       })

@@ -2,7 +2,7 @@
 
 import { Route, Routes } from 'react-router-dom'
 import s from './App.module.scss'
-import Intro from 'features/questions/Intro'
+
 import Page from 'layout/Page'
 import SectionHeading from 'features/questions/SectionHeading'
 import Question from 'features/questions/Question'
@@ -21,6 +21,7 @@ import Register from 'features/auth/Register'
 import PageInfo from 'features/info/PageInfo'
 import Home from 'features/questions/Home'
 import CookiesMessage from 'features/info/CookieMessage'
+import Intro from 'features/questions/Intro'
 
 const App = () => {
   return (

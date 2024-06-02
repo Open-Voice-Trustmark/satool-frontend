@@ -3,7 +3,7 @@
 import axios from 'axios'
 import i18n from 'i18n'
 
-export const apiEndpoint = process.env.REACT_APP_API_ENDPOINT
+export const apiEndpoint = import.meta.env.VITE_API_ENDPOINT
 
 export const getLangConfig = () => {
   return {

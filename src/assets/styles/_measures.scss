@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 
-@use "sass:map";
-@import "_functions";
+@use 'sass:map';
+@import '_functions';
 
 // css custom properties exposed globally:
 // --spacer-{name}: creates spacer variables based on the grid and multipiers
@@ -13,8 +13,8 @@ $topbar-height: 112px;
 $topbar-height-mobile: 80px;
 
 $spacer-base: 40px;
-$multiplier-base: 1/8;
-$multiplier-mobile: 1/2;
+$multiplier-base: 0.125;
+$multiplier-mobile: 0.5;
 $spacer-multipliers: (
   1: (
     $multiplier-base,

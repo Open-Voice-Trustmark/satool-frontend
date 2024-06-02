@@ -13,10 +13,7 @@ type TopBarProps = {
   fullNav?: boolean
 }
 
-const TopBar: FC<TopBarProps> = ({
-  styleType = 'regular',
-  fullNav = false,
-}) => {
+const TopBar: FC<TopBarProps> = ({ styleType = 'regular' }) => {
   const { slug } = useParams()
   return (
     <div className={cn(s.topbar, slug)}>

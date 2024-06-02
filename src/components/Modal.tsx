@@ -48,8 +48,8 @@ const Modal: FC<ModalProps> = ({
 
   const handleAction = () => {
     onAction()
-      .then((r) => handleSuccess(r))
-      .catch((e) => setShowError(true))
+      .then((r: any) => handleSuccess(r))
+      .catch((_e: any) => setShowError(true))
   }
 
   useEffect(
