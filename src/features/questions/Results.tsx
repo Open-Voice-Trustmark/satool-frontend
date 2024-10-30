@@ -58,7 +58,7 @@ const Results = () => {
 
             <div className={s.sections}>
               {results.sections.map((section, i) => (
-                <div className={s.sectionScore}>
+                <div className={s.sectionScore} key={section.slug}>
                   <RingProgress
                     progress={[section.score]}
                     strokeWidth={18}

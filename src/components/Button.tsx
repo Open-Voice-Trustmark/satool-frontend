@@ -12,7 +12,7 @@ type ButtonProps = {
   className?: string
   children: ReactNode
   styleType?: 'primary' | 'secondary' | 'red'
-  variant?: 'regular' | 'inverted'
+  variant?: 'regular' | 'inverted' | 'outline'
 }
 
 const Button: FC<ButtonProps> = ({
@@ -30,6 +30,7 @@ const Button: FC<ButtonProps> = ({
     to && s.link,
     styleType === 'secondary' && s.secondary,
     variant === 'inverted' && s.inverted,
+    variant === 'outline' && s.outline,
     styleType === 'red' && s.red
   )
   if (to) {

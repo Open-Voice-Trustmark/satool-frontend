@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 
-import { FC } from 'react'
+import { FC, Fragment } from 'react'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 import s from './RingProgress.module.scss'
@@ -91,7 +91,7 @@ const RingProgress: FC<RingProgressProps> = ({
       {progress.map((p, i) => {
         const acc = progress.reduce((acc, p, j) => (j < i ? acc + p : acc), 0)
         return (
-          <>
+          <Fragment key={i}>
             <div
               className={s.ringWrapper}
               style={{
@@ -122,7 +122,7 @@ const RingProgress: FC<RingProgressProps> = ({
                 />
               </div>
             ) : null}
-          </>
+          </Fragment>
         )
       })}
     </div>

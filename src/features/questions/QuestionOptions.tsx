@@ -7,11 +7,11 @@ import {
   QuestionOption as QuestionOptionData,
 } from './questions'
 import { useQuestionnaireStore } from 'store/store'
-import { shallow } from 'zustand/shallow'
 import s from './QuestionOptions.module.scss'
 import { clsx as cn } from 'clsx'
 import { Col, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
+import { useShallow } from 'zustand/shallow'
 
 type QuestionOptionsProps = {
   question: Question
@@ -83,12 +83,11 @@ const Suggestion: FC<SuggestionProps> = ({ option }) => {
 
 const QuestionOptions: FC<QuestionOptionsProps> = ({ question }) => {
   const { answers, setAnswer, unSetAnswer } = useQuestionnaireStore(
-    ({ answers, setAnswer, unSetAnswer }) => ({
+    useShallow(({ answers, setAnswer, unSetAnswer }) => ({
       answers,
       setAnswer,
       unSetAnswer,
-    }),
-    shallow
+    }))
   )
   const selectedAnswers = answers.filter((a) => a.question.id === question.id)
   const freeTextRef = useRef<HTMLDivElement>()

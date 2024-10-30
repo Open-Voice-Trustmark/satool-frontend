@@ -24,6 +24,16 @@
     background-color: var(--button-primary-active);
   }
 
+  &.outline {
+    background-color: transparent;
+    border: 1px solid var(--button-primary);
+    color: var(--button-primary);
+    &:hover {
+      background-color: var(--button-primary);
+      color: var(--button-primary-text);
+    }
+  }
+
   &.inverted:not(.secondary) {
     background-color: var(--button-primary-inverted);
     color: var(--button-primary-inverted-text);

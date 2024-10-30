@@ -64,7 +64,7 @@ const QuestionnaireList = () => {
                 </div>
               ) : (
                 questionnaires.map((q) => (
-                  <Col sm={12} md={6}>
+                  <Col sm={12} md={6} key={q.id}>
                     <div className={s.item}>
                       <div className={s.nameWrapper}>
                         <P className={s.name}>{q.name}</P>
@@ -93,6 +93,7 @@ const QuestionnaireList = () => {
                           styleType={
                             q.progress === 100 ? 'primary' : 'secondary'
                           }
+                          variant="outline"
                           to={
                             q.progress === 100
                               ? results(q.id)

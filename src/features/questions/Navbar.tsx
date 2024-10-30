@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap'
 import SectionNavigation from './SectionNavigation'
 import { results } from './urls'
 import { useQuestionnaireStore } from 'store/store'
-import { shallow } from 'zustand/shallow'
+import { useShallow } from 'zustand/shallow'
 import { useParams } from 'react-router-dom'
 import { clsx as cn } from 'clsx'
 import useQuestion from './useQuestion'
@@ -44,18 +44,19 @@ const Navbar: FC<NavbarProps> = ({
 
   const { postAnswers, questionnaire, fetchQuestionnaire, getSectionWithId } =
     useQuestionnaireStore(
-      ({
-        postAnswers,
-        questionnaire,
-        fetchQuestionnaire,
-        getSectionWithId,
-      }) => ({
-        postAnswers,
-        questionnaire,
-        fetchQuestionnaire,
-        getSectionWithId,
-      }),
-      shallow
+      useShallow(
+        ({
+          postAnswers,
+          questionnaire,
+          fetchQuestionnaire,
+          getSectionWithId,
+        }) => ({
+          postAnswers,
+          questionnaire,
+          fetchQuestionnaire,
+          getSectionWithId,
+        })
+      )
     )
   const section = question ? getSectionWithId(question.sectionId) : undefined
 
