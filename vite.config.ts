@@ -17,6 +17,12 @@ export default defineConfig(({ mode }) => {
       'process.env.REACT_APP_API_ENDPOINT': JSON.stringify(
         env.REACT_APP_API_ENDPOINT
       ),
+      'process.env.REACT_APP_JWT_ACCESS_TOKEN_KEY': JSON.stringify(
+        env.REACT_APP_JWT_ACCESS_TOKEN_KEY
+      ),
+      'process.env.REACT_APP_JWT_REFRESH_TOKEN_KEY': JSON.stringify(
+        env.REACT_APP_JWT_REFRESH_TOKEN_KEY
+      ),
     },
   }
 })
